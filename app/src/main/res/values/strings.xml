@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LibraryCard</string>
+    <string name="verify">Please enter the code you received below. If you have not given the valid email address then recheck your email and verify again.</string>
+    <string name="resend"> <u>Resend the code?</u> </string>
+</resources>

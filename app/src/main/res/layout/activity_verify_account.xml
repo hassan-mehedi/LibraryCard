@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7EBEC"
+    android:padding="7dp"
+    android:orientation="vertical"
+    tools:context=".VerifyAccount">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We've sent a code to your email"
+        android:textColor="#857E7E"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:textColor="#857E7E"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your code:"
+            android:layout_gravity="start"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:id="@+id/codeId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Code"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#D80E0E"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            />
+
+        <Button
+            android:id="@+id/submitId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/blue_submit"
+            android:layout_marginBottom="50dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive the code?"
+            android:textColor="#857E7E"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            />
+
+        <Button
+            android:id="@+id/resendTheCodeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/resend"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="#635F5F"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
