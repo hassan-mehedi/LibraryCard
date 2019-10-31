@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="4"
+        android:background="#fff"
+        >
+
+        <ImageView
+            android:id="@+id/bookListImageViewId"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:src="@drawable/intruduction_to_computer_system"/>
+
+        <TextView
+            android:id="@+id/bookListTextViewId"
+            android:paddingLeft="15dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="#FFFFFF"
+            android:textColor="#2B2929"
+            android:text="Introduction to computer system"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

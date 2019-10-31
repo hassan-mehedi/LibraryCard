@@ -102,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:text="@string/resend"
+            android:text="Resend the code?"
             android:textAllCaps="false"
             android:textStyle="normal"
             android:textSize="18sp"

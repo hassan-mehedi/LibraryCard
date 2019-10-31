@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/aclonica"
+        android:text="My shelve : "
+        android:textColor="#444446"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/amaranth" />
+
+    <ListView
+        android:id="@+id/shelveListViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_color"
+        android:dividerHeight="3dp"
+        android:listSelector="#F1EFEF">
+
+    </ListView>
+
+</LinearLayout>

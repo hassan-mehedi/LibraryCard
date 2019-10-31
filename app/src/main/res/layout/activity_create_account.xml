@@ -6,129 +6,149 @@
     android:layout_height="match_parent"
     android:background="#318BD1"
     android:padding="7dp"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".CreateAccount">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="UITS"
-        android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/aclonica"
-        android:layout_marginBottom="20dp"
-        />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:weightSum="2"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         >
 
-        <EditText
-            android:id="@+id/firstNameId"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/round_shape"
-            android:layout_marginRight="3dp"
-            android:hint="First Name"
-            android:paddingLeft="10dp"
-            />
-
-        <EditText
-            android:id="@+id/lastNameId"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/round_shape"
-            android:layout_marginLeft="3dp"
-            android:paddingLeft="10dp"
-            android:hint="Last Name"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="UITS"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/aclonica"
+            android:layout_marginBottom="20dp"
             />
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/createEmailAddressId"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/round_shape"
-        android:hint="Email address"
-        android:paddingLeft="10dp"
-        android:layout_marginBottom="10dp"
-        />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:weightSum="5"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="7dp"
+           >
 
-        <AutoCompleteTextView
-            android:id="@+id/autoDeptId"
-            android:layout_weight="2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/round_shape"
-            android:layout_marginRight="3dp"
-            android:hint="DEPT"
-            android:paddingLeft="10dp"
-            />
+           <EditText
+               android:id="@+id/createFirstNameId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="First name"
+               android:layout_marginBottom="10dp"
+               />
 
-        <EditText
-            android:id="@+id/studentId"
-            android:layout_weight="3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/round_shape"
-            android:layout_marginLeft="3dp"
-            android:hint="Student id"
-            android:paddingLeft="10dp"
-            />
+           <EditText
+               android:id="@+id/createLastNameId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Last name"
+               android:layout_marginBottom="10dp"
+               />
 
-    </LinearLayout>
-    
-    <EditText
-        android:id="@+id/phoneNumberId"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/round_shape"
-        android:hint="Phone number"
-        android:paddingLeft="10dp"
-        android:layout_marginBottom="10dp"
-        />
-    
-    <EditText
-        android:id="@+id/addressId"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@drawable/round_shape"
-        android:hint="Address"
-        android:paddingLeft="10dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="start"
-        android:paddingTop="5dp"
-        />
+           <Spinner
+               android:id="@+id/createDepartmentSpinnerId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/round_shape"
+               />
 
-    <Button
-        android:id="@+id/submitId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round_button"
-        android:text="Submit"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:textAllCaps="false"
-        />
+           <EditText
+               android:id="@+id/createStudentId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Student id"
+               android:layout_marginBottom="10dp"
+               />
+
+           <EditText
+               android:id="@+id/createEmailId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Email address"
+               android:layout_marginBottom="10dp"
+               />
+
+           <EditText
+               android:id="@+id/createPhoneNumberId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Phone number"
+               android:layout_marginBottom="10dp"
+               />
+
+           <EditText
+               android:id="@+id/createAddressId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Address"
+               android:layout_marginBottom="10dp"
+               />
+
+           <EditText
+               android:id="@+id/createDOBId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Date of birth"
+               android:layout_marginBottom="10dp"
+               />
+
+           <EditText
+               android:id="@+id/createPasswordId"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/round_shape"
+               android:paddingLeft="20dp"
+               android:hint="Password"
+               android:inputType="textPassword"
+               android:layout_marginBottom="10dp"
+               />
+
+           <Button
+               android:layout_marginTop="20dp"
+               android:id="@+id/createSubmitId"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Submit"
+               android:background="@drawable/round_button"
+               android:textColor="#fff"
+               android:textAllCaps="false"
+               android:textSize="18sp"
+               />
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
 
 </LinearLayout>

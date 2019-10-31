@@ -1,5 +1,48 @@
 <resources>
     <string name="app_name">LibraryCard</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
     <string name="verify">Please enter the code you received below. If you have not given the valid email address then recheck your email and verify again.</string>
-    <string name="resend"> <u>Resend the code?</u> </string>
+    <string-array name="books_name">
+        <item>Introduction to computer system</item>
+        <item>Principles of digital electronics</item>
+        <item>Structured programming language</item>
+        <item>Integral calculas and differential equations</item>
+        <item>Data structure</item>
+    </string-array>
+    <string-array name="dept">
+
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>IT</item>
+        <item>Civil</item>
+        <item>Pharmacy</item>
+        <item>Law</item>
+
+    </string-array>
+
+    <string-array name="book_with_author">
+
+        <item>Compilers Principles, Techniques and Tools by Alfred V Aho</item>
+
+        <item>Principles of Compiler Design by Alfred V Aho</item>
+
+        <item>Introduction to Computers by Peter Norton</item>
+
+        <item>Computer Fundamentals by M Lutfar Rahman</item>
+
+        <item>System Analysis and Design: A Practioners Approach by Kenneth E Kendall</item>
+
+        <item>System Analysis and Design by Elias M Awad</item>
+
+        <item>Computer System Architecture by M Morris Mano</item>
+
+        <item>Fundamentals of Computer Algorithms by Ellis Horowitz</item>
+
+        <item>Microprocessor Data Handbook by BPB Publications</item>
+
+        <item>Microprocessor and Microcomputer by based System Design by Md Rafiquzzaman</item>
+
+    </string-array>
+
 </resources>
